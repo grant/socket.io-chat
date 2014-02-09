@@ -1,12 +1,19 @@
-var express = require("express");
+// Setup basic express server
+var express = require('express');
 var app = express();
-var io = require('socket.io').listen(app);
+var server = require('http').createServer(app);
+var io = require('socket.io').listen(server);
+var port = 8000;
 
-app.listen(8000);
+server.listen(port);
+console.log('Server listening at port %d', port);
 
 // routing
 app.get('/', function (req, res) {
-  res.sendfile(__dirname + '/index.html');
+	res.sendfile(__dirname + '/index.html');
+});
+app.get('/main.js', function (req, res) {
+	res.sendfile(__dirname + '/main.js');
 });
 
 // usernames which are currently connected to the chat
