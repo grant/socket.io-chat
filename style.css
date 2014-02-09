@@ -1,9 +1,47 @@
 /* Reset user-agent */
+* {
+	box-sizing: border-box;
+}
 html, body {
 	padding: 0;
 	margin: 0;
+	height: 100%;
 }
 
+/* Messages */
 #messages {
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+	padding-bottom: 50px;
+
 	overflow-y: scroll;
+}
+.username {
+	float: left;
+	width: 20%;
+}
+.messageBody {
+	width: 80%;
+}
+
+/* Input */
+.inputArea {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+}
+
+#inputMessage {
+	float: left;
+	width: 90%;
+	height: 100%;
+}
+
+#sendMessage {
+	width: 10%;
+	height: 100%;
 }

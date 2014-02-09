@@ -7,8 +7,10 @@
 </head>
 <body>
 	<ul id="messages"></ul>
-	<input id="inputMessage" style="width:200px;" />
-	<input type="button" id="sendMessage" value="send"/>
+	<div class="inputArea">
+		<input id="inputMessage" />
+		<button id="sendMessage">send</button>
+	</div>
 
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
