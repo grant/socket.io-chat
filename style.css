@@ -1,6 +1,8 @@
 /* Reset user-agent */
 * {
 	box-sizing: border-box;
+	font-size: 20px;
+	font-family: Arial;
 }
 html, body {
 	padding: 0;
@@ -17,16 +19,22 @@ html, body {
 
 	overflow-y: scroll;
 }
+.message {
+	overflow: hidden;
+}
 .username {
+	color: rgb(255, 133, 0);
 	float: left;
 	padding-right: 10px;
-	width: 10%;
-	min-width: 50px;
+	width: 15%;
 	text-align: right;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .messageBody {
 	float: left;
-	width: 80%;
+	width: 75%;
 }
 
 /* Input */
@@ -42,6 +50,7 @@ html, body {
 	float: left;
 	width: 90%;
 	height: 100%;
+	padding-left: 10px;
 }
 
 #sendMessage {
