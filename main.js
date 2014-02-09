@@ -25,18 +25,18 @@ socket.on('updateusers', function(data) {
 // on load of page
 $(function(){
 	// when the client clicks SEND
-	$('#datasend').click( function() {
-		var message = $('#data').val();
-		$('#data').val('');
+	$('#sendMessage').click( function() {
+		var message = $('#inputMessage').val();
+		$('#inputMessage').val('');
 		// tell server to execute 'sendchat' and send along one parameter
 		socket.emit('sendchat', message);
 	});
 
 	// when the client hits ENTER on their keyboard
-	$('#data').keypress(function(e) {
+	$(window).keypress(function(e) {
 		if(e.which == 13) {
 			$(this).blur();
-			$('#datasend').focus().click();
+			$('#sendMessage').focus().click();
 		}
 	});
 });

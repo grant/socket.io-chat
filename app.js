@@ -15,6 +15,9 @@ app.get('/', function (req, res) {
 app.get('/main.js', function (req, res) {
 	res.sendfile(__dirname + '/main.js');
 });
+app.get('/style.js', function (req, res) {
+	res.sendfile(__dirname + '/style.js');
+});
 
 // usernames which are currently connected to the chat
 var usernames = {};

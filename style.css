@@ -1,3 +1,9 @@
+/* Reset user-agent */
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
 #messages {
 	overflow-y: scroll;
 }
