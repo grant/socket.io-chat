@@ -1,8 +1,6 @@
-/* Reset user-agent */
+/* Fix user-agent */
 * {
 	box-sizing: border-box;
-	font-size: 20px;
-	font-family: Arial;
 }
 html, body {
 	padding: 0;
@@ -10,8 +8,17 @@ html, body {
 	height: 100%;
 }
 
+/* Font */
+.messages, .inputMessage, .sendMessage {
+	font-size: 20px;
+	font-family: Arial;
+}
+.log {
+	color: gray;
+}
+
 /* Messages */
-#messages {
+.messages {
 	height: 100%;
 
 	padding: 10px 10px 60px 10px;
@@ -46,14 +53,14 @@ html, body {
 	height: 50px;
 }
 
-#inputMessage {
+.inputMessage {
 	float: left;
 	width: 90%;
 	height: 100%;
 	padding-left: 10px;
 }
-
-#sendMessage {
+/* Send message button */
+.sendMessage {
 	float: left;
 	width: 10%;
 	height: 100%;
