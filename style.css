@@ -12,17 +12,20 @@ html, body {
 #messages {
 	height: 100%;
 
-	padding: 0;
+	padding: 10px 10px 60px 10px;
 	margin: 0;
-	padding-bottom: 50px;
 
 	overflow-y: scroll;
 }
 .username {
 	float: left;
-	width: 20%;
+	padding-right: 10px;
+	width: 10%;
+	min-width: 50px;
+	text-align: right;
 }
 .messageBody {
+	float: left;
 	width: 80%;
 }
 
@@ -42,6 +45,7 @@ html, body {
 }
 
 #sendMessage {
+	float: left;
 	width: 10%;
 	height: 100%;
 }

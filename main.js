@@ -11,8 +11,9 @@ socket.on('updatechat', function (username, message) {
 	var usernameDiv = '<div class="username">' + username + '</div>';
 	var messageBodyDiv = '<div class="messageBody">' + message + '</div>';
 	var messageDiv = '<div class="message">' + usernameDiv + messageBodyDiv + '</div>';
-	console.log(messageDiv);
-	$('#messages').append(messageDiv);
+	var $messages = $('#messages');
+	$messages.append(messageDiv);
+	$messages[0].scrollTop = $messages[0].scrollHeight;
 });
 
 // listener, whenever the server emits 'updateusers', this updates the username list
