@@ -9,5 +9,9 @@ A simple chat demo for socket.io
  - Lots of comments
  - Works on all devices/browsers
 
+###TODO
+ - Test on mobile
+ - Touch up comments
+
 ###Screenshot
 ![screenshot](https://raw.github.com/grant/socket.io-chat/master/screenshot.png)
