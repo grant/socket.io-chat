@@ -16,14 +16,6 @@ socket.on('updatechat', function (username, message) {
 	$messages[0].scrollTop = $messages[0].scrollHeight;
 });
 
-// listener, whenever the server emits 'updateusers', this updates the username list
-socket.on('updateusers', function(data) {
-	$('.users').empty();
-	$.each(data, function(key, value) {
-		$('.users').append('<div>' + key + '</div>');
-	});
-});
-
 // on load of page
 $(function(){
 	// when the client clicks SEND
