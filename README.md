@@ -1,5 +1,11 @@
-socket.io-chat
-==============
+# MOVED
+
+ - Chat demo is now in socket.io's repo [https://github.com/LearnBoost/socket.io/tree/master/examples/chat](https://github.com/LearnBoost/socket.io/tree/master/examples/chat)
+
+- - -
+
+socket.io-chat (Old)
+====================
 
 A simple chat demo for socket.io
 
